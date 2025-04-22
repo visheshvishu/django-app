@@ -1,5 +1,7 @@
 services:
   django-app:
+    build:
+      context: .
     image: visheshvishu/django-app:latest
     ports:
       - "8000:8000"
