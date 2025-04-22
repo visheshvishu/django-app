@@ -3,4 +3,5 @@ services:
     image: visheshvishu/django-app:latest
     ports:
       - "8000:8000"
+    restart: always
     
