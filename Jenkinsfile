@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'ec2' }
 
     environment {
         COMPOSE_FILE = 'docker-compose.yml'
