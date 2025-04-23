@@ -2,7 +2,7 @@ services:
   django-app:
     build:
       context: .
-    image: visheshvishu/django-app:latest
+    image: django-app:latest
     ports:
       - "8000:8000"
     restart: unless-stopped
