@@ -37,6 +37,7 @@ pipeline {
             steps {
                 script{
                     withDockerRegistry(credentialsId: 'dockerhub') {
+                        sh 'docker tag django-app:latest visheshvishu/django-app:latest'
                         sh 'docker push visheshvishu/django-app:latest'
                     }
                 }
