@@ -1,6 +1,6 @@
 services:
   django-app:
-    image: 18.234.162.5:5000/django-app:latest
+    image: 3.83.177.175:5000/django-app:latest
     ports:
       - "8000:8000"
     restart: unless-stopped
