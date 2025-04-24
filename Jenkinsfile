@@ -32,9 +32,9 @@ pipeline {
                 script{
                     // withDockerRegistry(credentialsId: 'dockerhub') {
                     //     sh 'docker push visheshvishu/django-app:latest'
-                    withDockerRegistry(credentialsId: 'private-registry', url: 'https://18.234.162.5:5000')  {
-                      sh 'docker tag django-app:latest 18.234.162.5:5000/django-app:latest'
-                      sh 'docker push 18.234.162.5:5000/django-app:latest'
+                    withDockerRegistry(credentialsId: 'private-registry', url: 'https://3.83.177.175:5000')  {
+                      sh 'docker tag django-app:latest 3.83.177.175:5000/django-app:latest'
+                      sh 'docker push 3.83.177.175:5000/django-app:latest'
                     }
                 }
             }        
